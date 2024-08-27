@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="testapp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="Plants"
+        titleAlignment="Center"
+       
+    >
+        <List
+            id="_IDGenList1"
+            items="{/PLANTS}"
+            selectionChange="onView2"
+            mode="SingleSelectMaster"
+        >
+            <items>
+                <ObjectListItem id="_IDGenObjectListItem1"  title="{PLANT_NAME}"   number="{path: 'PLANT_REVENUE', formatter: '.formatNumber'}"   numberUnit="USD" >
+                <firstStatus>
+                <ObjectStatus id="_IDGenObjectStatus1"  text="Aug 20 2024" ></ObjectStatus>
+                </firstStatus>
+             <ObjectAttribute id="_IDGenObjectAttribute1" text="WeightMeasureWeightUnit" />
+			<ObjectAttribute id="_IDGenObjectAttribute2" text="Width  Depth Height DimUnit" />
+                </ObjectListItem>
+            </items>
+        </List>
+    </Page>
+</mvc:View>

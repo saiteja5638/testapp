@@ -1,0 +1,105 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    controllerName="testapp.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:layout="sap.ui.layout"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="Status"
+        showHeader="true"
+        titleAlignment="Center"
+    >
+        <ObjectListItem
+            id="_IDGenObjectListItem1"
+            title="Plant123"
+            number="789652"
+            numberUnit="USD"
+        >
+            <firstStatus>
+                <ObjectStatus
+                    id="_IDGenObjectStatus1"
+                    title="Aug 20 2024"
+                />
+            </firstStatus>
+            <ObjectAttribute
+                id="_IDGenObjectAttribute1"
+                text="WeightMeasureWeightUnit"
+            />
+            <ObjectAttribute id="_IDGenObjectAttribute2" text="" />
+        </ObjectListItem>
+        <IconTabBar id="_IDGenIconTabBar1">
+            <items>
+                <IconTabFilter
+                    id="_IDGenIconTabFilter1"
+                    text="Info"
+                    icon="sap-icon://message-information"
+                >
+                        <VBox id="_IDGenVBox1"
+            width="100%"
+       
+            justifyContent="Center"
+            alignItems="Center"
+        >
+           <HBox id="_IDGenHBox1">
+                <Label id="_IDGenLabel1" text="Purchase Order :" />
+                <Text id="_IDGenText1" text="Text 1" />
+            </HBox>
+            <HBox id="_IDGenHBox2">
+                <Label id="_IDGenLabel2" text="Account Assignment" />
+                <Text id="_IDGenText2" text="Text 1" />
+            </HBox>
+            <HBox id="_IDGenHBox3">
+                <Label id="_IDGenLabel3" text="Delivery Date" />
+                <Text id="_IDGenText3" text="Text 1" />
+            </HBox>
+            <HBox id="_IDGenHBox4">
+                <Label id="_IDGenLabel4" text="Account" />
+                <Text id="_IDGenText4" text="Text 1" />
+            </HBox>
+            <HBox id="_IDGenHBox5">
+                <Label id="_IDGenLabel5" text="Payment terms:" />
+                <Text id="_IDGenText5" text="Text 1" />
+            </HBox>
+                        <HBox id="_IDGenHBox7">
+                <Label id="_IDGenLabel7" text="incoterms" />
+                <Text id="_IDGenText7" text="Text 1" />
+            </HBox>
+            <HBox id="_IDGenHBox6">
+                <Label id="_IDGenLabel6" text="Company Code" />
+                <Text id="_IDGenText6" text="Text 1" />
+            </HBox>
+        </VBox>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+        <Table>
+        <infoToolbar>
+        <Toolbar >
+        <Title   text="Items()" ></Title>
+        </Toolbar>
+        </infoToolbar>
+        <columns>
+        <Column  hAlign="Center" >
+        <Title  text="Test1" ></Title>
+        </Column>
+         <Column  hAlign="Center" >
+        <Title  text="Test1" ></Title>
+        </Column>
+          <Column  hAlign="Center" >
+        <Title  text="Test1" ></Title>
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem >
+        <Text  text="Txet2" ></Text>
+         <Text  text="Txet2" ></Text>
+          <Text  text="Txet2" ></Text>
+        </ColumnListItem>
+        </items>
+        </Table>
+   
+    </Page>
+</mvc:View>
