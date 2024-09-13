@@ -1,0 +1,15 @@
+<mvc:View
+    controllerName="testapp.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="sacswcd"
+        title="View 3 "
+        titleAlignment="Center"
+       
+    >
+
+    </Page>
+</mvc:View>

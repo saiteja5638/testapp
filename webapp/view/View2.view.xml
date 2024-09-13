@@ -6,11 +6,16 @@
     xmlns:layout="sap.ui.layout"
     xmlns="sap.m"
 >
+
+<!-- <SplitApp mode="HideMode"  id="SplitContDemo" >
+<detailPages >    -->
     <Page
         id="page"
         title="Status"
         showHeader="true"
         titleAlignment="Center"
+        showNavButton="true"
+        navButtonPress="view3"
     >
         <ObjectListItem
             id="_IDGenObjectListItem1"
@@ -100,6 +105,31 @@
         </ColumnListItem>
         </items>
         </Table>
-   
     </Page>
+    			<!-- <Page
+				id="detailDetail"
+				title="Detail Detail"
+				backgroundDesign= "Solid"
+				showNavButton="true"
+				navButtonPress=".onPressNavToDetail123">
+				<VBox class="sapUiSmallMargin">
+					<Label text="This is Detail Page 2" />
+					<Text text="Here you could change the Split Application mode. After the mode change, resize the browser window to see the difference in the master form behaviour." />
+					<RadioButtonGroup
+						columns="1"
+						width="500px"
+						class="sapUiMediumMarginBottom"
+						select=".onPressModeBtn">
+						<buttons>
+							<RadioButton id="RB1-1" text="show/hide"   />
+							<RadioButton id="RB1-2" text="stretch/compress"  />
+							<RadioButton id="RB1-3" text="hide"  />
+							<RadioButton id="RB1-4" text="popover"  />
+						</buttons>
+					</RadioButtonGroup>
+				</VBox>
+			</Page> -->
+<!-- </detailPages>
+</SplitApp> -->
+
 </mvc:View>

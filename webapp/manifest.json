@@ -97,8 +97,7 @@
           "name": "RouteView1",
           "pattern": "",
           "target": [
-            "TargetView1",
-            "View2"
+            "TargetView1"
           ]
         },
         {
@@ -107,6 +106,15 @@
           "target": [
             "TargetView1",
             "View2"
+          ]
+        },
+        {
+          "name": "RouteView1",
+          "pattern": "",
+          "target": [
+            "TargetView1",
+            "View2",
+            "View3"
           ]
         }
       ],
@@ -126,6 +134,14 @@
           "controlAggregation": "midColumnPages",
           "viewId": "View2",
           "viewName": "View2"
+        },
+        "View3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "controlAggregation": "ThreeColumnsMidExpanded",
+          "viewId": "View3",
+          "viewName": "View3"
         }
       }
     },

@@ -5,7 +5,7 @@
     xmlns="sap.m"
 >
     <Page
-        id="page"
+        id="page1"
         title="Plants"
         titleAlignment="Center"
        
@@ -13,16 +13,29 @@
         <List
             id="_IDGenList1"
             items="{/PLANTS}"
-            selectionChange="onView2"
+            selectionChange="view3"
             mode="SingleSelectMaster"
         >
+        <infoToolbar>
+        <Toolbar id="_IDGenToolbar" >
+        <Button   text="View3"  press="view3" ></Button> 
+        </Toolbar>
+        </infoToolbar>
             <items>
-                <ObjectListItem id="_IDGenObjectListItem1"  title="{PLANT_NAME}"   number="{path: 'PLANT_REVENUE', formatter: '.formatNumber'}"   numberUnit="USD" >
+                <!-- <ObjectListItem id="_IDGenObjectListItugwfuiem1"  title="{PLANT_NAME}"   number="{path: 'PLANT_REVENUE', formatter: '.formatNumber'}"   numberUnit="USD" >
                 <firstStatus>
-                <ObjectStatus id="_IDGenObjectStatus1"  text="Aug 20 2024" ></ObjectStatus>
+                <ObjectStatus id="_IDGenObjectascsStatus1"  text="Aug 20 2024" ></ObjectStatus>
                 </firstStatus>
-             <ObjectAttribute id="_IDGenObjectAttribute1" text="WeightMeasureWeightUnit" />
-			<ObjectAttribute id="_IDGenObjectAttribute2" text="Width  Depth Height DimUnit" />
+             <ObjectAttribute id="_IDGenObjecsacsatAttribute1" text="WeightMeasureWeightUnit" />
+			<ObjectAttribute id="_IDGenObjectsacsAttribute2" text="Width  Depth Height DimUnit" />
+                </ObjectListItem> -->
+                <ObjectListItem id="_IDGenObjectListItem"  title="{PLANT_NAME}" number="{PLANT_REVENUE}"  numberState="Success"  numberUnit="USD"  >
+                <firstStatus  >
+                <ObjectStatus id="_IDGenObjectStatus"  text="Turan"  ></ObjectStatus>
+                </firstStatus>
+                <ObjectAttribute id="_IDGenObjectAttribute"   text="Senior Technical Consultat"  ></ObjectAttribute>
+                <ObjectAttribute id="_IDGenObjectAttribute3"   text="Google"  ></ObjectAttribute>
+                <ObjectAttribute id="_IDGenObjectAttribute4"   text="Germany" ></ObjectAttribute>
                 </ObjectListItem>
             </items>
         </List>
